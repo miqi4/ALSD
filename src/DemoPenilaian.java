@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class DemoPenilaian {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -13,8 +12,10 @@ public class DemoPenilaian {
             new MataKuliah("MK002", "Basis Data" , 3),
             new MataKuliah("MK003", "Desain Web" , 3),
         };
+        Penilaian[] daftarNilai ={
+        };
         
-        int menu;
+        int menu,nim;
 
         while (true) {
             System.out.println();
@@ -38,6 +39,11 @@ public class DemoPenilaian {
                 }         
             }else if (menu == 3) {
                 
+            }else if (menu == 4) {
+                
+            }else if (menu == 5) {
+                System.out.print("masukkan nim mahasiswa yang dicari : ");
+                nim = sc.nextInt();
             }
 
             }
