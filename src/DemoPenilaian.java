@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class DemoPenilaian {
@@ -6,11 +5,6 @@ public class DemoPenilaian {
         Scanner sc = new Scanner(System.in);
 
         int menu;
-        String[][] penonton = new String[4][2];
-        Mahasiswa mhs = new Mahasiswa();
-        mhs.NIM = "22001";
-        mhs.nama = "Ali Rahman";
-        mhs.prodi = "Informatika";
 
         while (true) {
             System.out.println();
@@ -25,27 +19,29 @@ public class DemoPenilaian {
             menu = sc.nextInt();
             sc.nextLine();
             if (menu == 1) {
+                Mahasiswa[] daftarMahasiswa = {
+                    new Mahasiswa("22001", "Ali Rahman", "Informatika"),
+                    new Mahasiswa("22002", "Budi Santoso", "Informatika"),
+                    new Mahasiswa("22003", "Citra Dewi", "Sistem Informasi Bisnis")
+                };
 
-                Mahasiswa mhs2 = new Mahasiswa("22002", "Budi Santoso", "Informatika");
-                mhs2.tampilMahasiswa();
-                Mahasiswa mhs3 = new Mahasiswa("22003", "Citra Dewi", "Sistem Informasi Bisnis");
-                mhs3.tampilMahasiswa();
-                Mahasiswa mhss = new Mahasiswa();
-                mhs.tampilMahasiswa();
+                for (Mahasiswa m : daftarMahasiswa) {
+                    m.tampilMahasiswa();
+                }
 
             } else if (menu == 2) {
-                for (String[] row : penonton) {
-                    for (String elemen : row) {
-                        System.out.print((elemen != null ? elemen : "***") + " ");
-                    }
-                    System.out.println();
+                MataKuliah[] daftarMataKuliah = {
+                    new MataKuliah("MK001", "Struktur Data" , 3),
+                    new MataKuliah("MK002", "Basis Data" , 3),
+                    new MataKuliah("MK003", "Desain Web" , 3),
+                };
+
+                for (MataKuliah m : daftarMataKuliah) {
+                    m.tampilMatakuliah();
                 }
-            } else if (menu == 3) {
-                break;
-            } else  {
-                System.out.println("Data yang anda masukkan salah");
+                
             }
         }
-
+//asdkf
     }
 }
