@@ -37,20 +37,12 @@ public class DemoPenilaian {
                 }         
             }
                 else if (menu == 3) {
-                    Mahasiswa m1 = new Mahasiswa("22001", "Ali Rahman", "Informatika");
-                    Mahasiswa m2 = new Mahasiswa("22002", "Budi Santoso", "Informatika");
-                    Mahasiswa m3 = new Mahasiswa("22003", "Citra Dewi", "Sistem Informasi Bisnis");
-                
-                    MataKuliah mk1 = new MataKuliah("MK001", "Struktur Data", 3);
-                    MataKuliah mk2 = new MataKuliah("MK002", "Basis Data", 3);
-                    MataKuliah mk3 = new MataKuliah("MK003", "Desain Web", 3);
-                
                     Penilaian[] mhs = {
-                        new Penilaian(m1, mk1, 80, 85, 90), 
-                        new Penilaian(m1, mk2, 60, 75, 70), 
-                        new Penilaian(m2, mk1, 75, 70, 80), 
-                        new Penilaian(m3, mk2, 85, 90, 95), 
-                        new Penilaian(m3, mk3, 80, 90, 65), 
+                        new Penilaian(daftarMahasiswa[0],daftarMataKuliah[0], 80, 85, 90), 
+                        new Penilaian(daftarMahasiswa[0],daftarMataKuliah[1], 60, 75, 70), 
+                        new Penilaian(daftarMahasiswa[1],daftarMataKuliah[0], 75, 70, 80), 
+                        new Penilaian(daftarMahasiswa[2],daftarMataKuliah[1], 85, 90, 95), 
+                        new Penilaian(daftarMahasiswa[2],daftarMataKuliah[2], 80, 90, 65), 
                     };
                 
                     System.out.println("\nData Penilaian:");
@@ -67,7 +59,7 @@ public class DemoPenilaian {
             //     nim = sc.nextInt();
             // }
 
-         } }
+        } }
         }
         
     
