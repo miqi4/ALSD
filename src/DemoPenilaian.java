@@ -14,7 +14,7 @@ public class DemoPenilaian {
         };
         
         int menu,nim;
-
+x
         while (true) {
             System.out.println();
             System.out.println("=== MENU SISTEM AKADEMIK ===");
@@ -46,7 +46,7 @@ public class DemoPenilaian {
                     MataKuliah mk3 = new MataKuliah("MK003", "Desain Web", 3);
                 
                     Penilaian[] mhs = {
-                        new Penilaian(m1, mk1, 80, 85, 90), 
+                        new Penilaian(daftarMahasiswa[0], daftarMataKuliah[0], 80, 85, 90), 
                         new Penilaian(m1, mk2, 60, 75, 70), 
                         new Penilaian(m2, mk1, 75, 70, 80), 
                         new Penilaian(m3, mk2, 85, 90, 95), 
@@ -60,7 +60,7 @@ public class DemoPenilaian {
                 }
                 
                 
-            // }if (menu == 4) {
+            }if (menu == 4) {
                 
             // }else if (menu == 5) {
             //     System.out.print("masukkan nim mahasiswa yang dicari : ");
