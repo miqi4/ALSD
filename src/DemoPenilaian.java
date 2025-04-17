@@ -42,7 +42,7 @@ public class DemoPenilaian {
                 }
             } else if (menu == 3) {
                 break;
-            } else {
+            } else  {
                 System.out.println("Data yang anda masukkan salah");
             }
         }
